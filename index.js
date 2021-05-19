@@ -62,7 +62,7 @@ function play(key) {
   }
 }
 
-document.addEventListener("keypress", (e) =>
+document.body.addEventListener("keydown", (e) =>
   play(e.code.charAt(3).toLowerCase())
 );
 
